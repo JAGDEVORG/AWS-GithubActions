@@ -5,7 +5,7 @@ metadata:
   labels:
     app: myweb-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: myweb-app
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: myweb-app
-          image: 177734118185.dkr.ecr.eu-west-2.amazonaws.com/mywebapp:$IMAGE_TAG
+          image: 177734118185.dkr.ecr.eu-west-2.amazonaws.com/mywebapp:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 80
