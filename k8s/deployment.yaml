@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: myweb-app
-          image: 274127640471.dkr.ecr.us-east-1.amazonaws.com/myweb-app:$IMAGE_TAG
+          image: 177734118185.dkr.ecr.eu-west-2.amazonaws.com/mywebapp:$IMAGE_TAG
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
